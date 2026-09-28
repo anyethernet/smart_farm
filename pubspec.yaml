@@ -1,0 +1,48 @@
+name: smart_farm
+description: Smart farm control — Hikvision live view + ESP32 TV8BD/TV16AVR IOCTL
+publish_to: "none"
+version: 1.5.57+75
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+  shared_preferences: ^2.3.3
+  provider: ^6.1.2
+  uuid: ^4.5.1
+  media_kit: ^1.1.11
+  media_kit_video: ^1.2.5
+  media_kit_libs_video: ^1.0.5
+  audioplayers: ^6.1.0
+  share_plus: ^13.3.0
+  file_picker: ^10.1.2
+  url_launcher: ^6.3.1
+  package_info_plus: ^9.0.0
+  flutter_localizations:
+    sdk: flutter
+
+# share_plus 13 ↔ file_picker 의 win32 제약 충돌 해소 (Android에는 영향 없음)
+dependency_overrides:
+  win32: ^5.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icon/app_icon.png
+  adaptive_icon_background: "#0F172A"
+  adaptive_icon_foreground: assets/icon/app_icon.png
+  adaptive_icon_foreground_inset: 0
+  min_sdk_android: 24
+
+flutter:
+  uses-material-design: true
