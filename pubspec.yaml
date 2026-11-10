@@ -1,7 +1,7 @@
 name: smart_farm
 description: Smart farm control — Hikvision live view + ESP32 TV8BD/TV16AVR IOCTL
 publish_to: "none"
-version: 1.5.57+75
+version: 1.5.59+77
 
 environment:
   sdk: ">=3.3.0 <4.0.0"
